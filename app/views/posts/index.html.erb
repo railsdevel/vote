@@ -1,28 +1,20 @@
 <h1>Listing posts</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Link</th>
-    <th>Description</th>
-    <th>User</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<ol class="posts">
 
 <% @posts.each do |post| %>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.link %></td>
-    <td><%= post.description %></td>
-    <td><%= post.user_id %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <li>
+    <%= link_to post.title, post.link.blank? ? post : post.link %><br/>
+    <span class="meta"> Posted by <%= post.user.name %> </span>
+
+    <!--
+    <%= link_to 'Edit', edit_post_path(post) %>
+    <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+    -->
+  </li>
 <% end %>
-</table>
+
+</ol>
 
 <br />
 

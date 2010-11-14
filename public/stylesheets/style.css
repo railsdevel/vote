@@ -55,4 +55,26 @@ body {
   font-family: "Lucida Grande", Georgia;
   font-size: 12px;
   width: 960px;
-  margin: 2em auto; }
+  margin: 2em auto;
+  line-height: 1.6; }
+
+h1 {
+  font-size: 1.8em; }
+
+h2 {
+  font-size: 1.6em; }
+
+h3, h4 {
+  font-size: 1.5em; }
+
+h5, h6 {
+  font-size: 1.3em; }
+
+a {
+  color: black; }
+  a:hover {
+    color: white;
+    background: black; }
+
+ul.posts .meta {
+  font-size: 0.9em; }
