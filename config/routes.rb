@@ -1,5 +1,19 @@
 Vote::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :skip => [:sessions, :registrations] do
+    get 'login', :to => "devise/sessions#new", :as => :new_user_session
+    post 'login', :to => "devise/sessions#create", :as => :user_session
+
+    get 'logout', :to => "devise/sessions#destroy", :as => :destroy_user_session
+
+
+    post 'users', :to => "devise/registrations#create", :as => :user_registration
+    put 'users', :to => "devise/registrations#update", :as => :user_registration
+    delete 'users', :to => "devise/registrations#destroy", :as => :user_registration
+
+    get 'register', :to => "devise/registrations#new", :as => :new_user_registration
+
+    get 'profile', :to => "devise/registrations#edit", :as => :edit_user_registration
+  end
 
   root :to => "pages#home"
 
