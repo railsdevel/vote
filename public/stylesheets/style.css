@@ -78,3 +78,22 @@ a {
 
 ul.posts .meta {
   font-size: 0.9em; }
+
+header {
+  overflow: auto; }
+  header ul a {
+    display: block;
+    float: left;
+    padding: 6px 12px;
+    color: #333;
+    text-decoration: none; }
+    header ul a:hover {
+      background: none;
+      color: black;
+      text-decoration: underline; }
+  header ul.primary {
+    float: left;
+    width: 500px; }
+  header ul.secondary {
+    float: right;
+    width: 150px; }

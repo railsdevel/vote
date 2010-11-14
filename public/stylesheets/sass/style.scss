@@ -25,3 +25,28 @@ a {
 ul.posts {
     .meta { font-size: 0.9em; }
 }
+
+header {
+    overflow:auto;
+    
+    ul a {
+        display:block;
+        float:left;
+        padding:6px 12px;
+        color: #333;
+        text-decoration:none;
+        &:hover {
+            background:none;
+            color: black;
+            text-decoration:underline;
+        }
+    }
+    ul.primary {
+        float:left;
+        width:500px;
+    }
+    ul.secondary {
+        float:right;
+        width:150px;
+    }
+}

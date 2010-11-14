@@ -17,7 +17,7 @@ Vote::Application.routes.draw do
     get 'profile', :to => "devise/registrations#edit", :as => :edit_user_registration
   end
 
-  root :to => "pages#home"
+  root :to => "posts#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
