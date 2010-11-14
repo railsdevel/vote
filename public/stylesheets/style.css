@@ -80,7 +80,8 @@ ul.posts .meta {
   font-size: 0.9em; }
 
 header {
-  overflow: auto; }
+  overflow: auto;
+  margin-bottom: 1em; }
   header ul a {
     display: block;
     float: left;
@@ -96,4 +97,4 @@ header {
     width: 500px; }
   header ul.secondary {
     float: right;
-    width: 150px; }
+    width: 250px; }
