@@ -1,4 +1,6 @@
 Vote::Application.routes.draw do
+  resources :posts
+
   devise_for :users, :skip => [:sessions, :registrations] do
     get 'login', :to => "devise/sessions#new", :as => :new_user_session
     post 'login', :to => "devise/sessions#create", :as => :user_session
