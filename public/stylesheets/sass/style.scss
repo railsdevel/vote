@@ -23,17 +23,25 @@ a {
 }
 
 ul.posts {
-    .meta {
-        font-size: 0.9em; line-height:1.2;
-    }
     li {
         margin-bottom: 1em;
     }
 }
 
+.post {
+    .meta {
+        font-size: 0.9em;
+        line-height:1.2;
+    }
+    
+    .description {
+        margin-top:1em;
+    }
+}
+
 header {
     overflow:auto;
-    margin-bottom:1em;
+    margin-bottom:2em;
     
     ul a {
         display:block;

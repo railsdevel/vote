@@ -76,15 +76,18 @@ a {
     color: white;
     background: black; }
 
-ul.posts .meta {
-  font-size: 0.9em;
-  line-height: 1.2; }
 ul.posts li {
   margin-bottom: 1em; }
 
+.post .meta {
+  font-size: 0.9em;
+  line-height: 1.2; }
+.post .description {
+  margin-top: 1em; }
+
 header {
   overflow: auto;
-  margin-bottom: 1em; }
+  margin-bottom: 2em; }
   header ul a {
     display: block;
     float: left;

@@ -1,14 +1,9 @@
 <ul class="posts">
 
 <% @posts.each do |post| %>
-  <li>
+  <li class="post">
     <%= link_to post.title, post.link.blank? ? post : post.link %><br/>
-    <span class="meta"> Posted by <%= post.user.username %> </span>
-
-    <!--
-    <%= link_to 'Edit', edit_post_path(post) %>
-    <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
-    -->
+    <span class="meta"> by <%= link_to post.user.username, post.user %> | <%= time_ago_in_words(post.created_at) %> ago | <%= link_to "Discuss", post %></span>
   </li>
 <% end %>
 
