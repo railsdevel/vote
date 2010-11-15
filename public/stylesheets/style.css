@@ -87,7 +87,8 @@ ul.posts li {
 
 header {
   overflow: auto;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  display: block; }
   header ul a {
     display: block;
     float: left;
