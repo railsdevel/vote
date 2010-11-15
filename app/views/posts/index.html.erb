@@ -5,7 +5,7 @@
 <% @posts.each do |post| %>
   <li>
     <%= link_to post.title, post.link.blank? ? post : post.link %><br/>
-    <span class="meta"> Posted by <%= post.user.name %> </span>
+    <span class="meta"> Posted by <%= post.user.username %> </span>
 
     <!--
     <%= link_to 'Edit', edit_post_path(post) %>
@@ -15,7 +15,3 @@
 <% end %>
 
 </ol>
-
-<br />
-
-<%= link_to 'New Post', new_post_path %>
